@@ -129,6 +129,6 @@ class TicketController extends Controller
         $ticket = Ticket::find($id);
         $pdf = PDF::loadView('pdf', compact('ticket'));
 
-        return $pdf->download('tiket-no-'.$id.'.pdf');
+        return $pdf->download('No Ticket -'.$id.'.pdf');
     }
 }
